@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "prueba",
+            "request": "launch",
+            "mainClass": "aPrueba.prueba",
+            "projectName": "login"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Attach)",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 5005,
+            "preLaunchTask": "run-tomcat",
+            "postDebugTask": "stop-tomcat"
+        },
+        {
+            "type": "chrome",
+            "name": "Launch Chrome without cache",
+            "request": "launch",
+            "url": "http://localhost:8080/calendar",
+            "webRoot": "${workspaceFolder}",
+            "runtimeArgs": [
+                "--disable-cache"
+            ]
+        }
+    ]
+}

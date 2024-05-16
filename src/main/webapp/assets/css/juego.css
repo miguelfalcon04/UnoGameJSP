@@ -1,0 +1,28 @@
+body{
+    background-image: url(../img/game.jpg);
+    background-size: cover;
+}
+
+.cartas{
+    display:flex;
+    justify-content:center;
+}
+
+.carta {
+    padding: 10px;
+    text-align: center;
+}
+
+.carta form {
+    display: inline-block; /* Permite que el formulario ocupe solo el espacio necesario */
+}
+
+.mesa{
+    margin-left:1px;
+    width: 0%;
+}
+
+.formularioRobar{
+    margin-top:5rem;
+    margin-left: 9rem;
+}
