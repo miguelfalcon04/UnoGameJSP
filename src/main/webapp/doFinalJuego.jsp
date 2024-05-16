@@ -25,7 +25,7 @@
     LoggedPlayer player = (LoggedPlayer)session.getAttribute("player");
     PlayerService playerSvc = new PlayerService(pool.getConnection());
     ArrayList<LoggedPlayer> playerArray = null;
-    playerArray = playerSvc.requestAll("id ASC");
+    playerArray = playerSvc.requestAllEnd("ID ASC");
 
     int ganador = -1;
     if(request.getParameter("ganador")!=null && request.getParameter("ganador").length() > 0){
@@ -58,7 +58,7 @@
     }else if(ganador==3){ // Se queda igual
     }
 
-    LoggedPlayer newPlayerData = new LoggedPlayer(player.getId(),name, surname, nametag, player.getPassword(), win, lost);
+    LoggedPlayer newPlayerData = new LoggedPlayer(id,name, surname, nametag, password, win, lost);
     if(auth.updateEnd(newPlayerData)==1){
         session.setAttribute("player",newPlayerData);
         out.print(new finJuegoView(player, ganador));

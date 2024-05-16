@@ -3,6 +3,8 @@ package crud;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import player.LoggedPlayer;
+
 /** CRUD
  * Interfaz que contiene los métodos necesarios para
  * obtener y modificar información de Jugadores en la base de datos
@@ -38,6 +40,8 @@ public interface CRUD<T> {
      * @throws SQLException
      */
     public ArrayList<T> requestAll(String sortedBy) throws SQLException;
+
+    public ArrayList<LoggedPlayer> requestAllEnd(String sortedBy) throws SQLException;
 
     /** requestById
      * Obtiene un registro del modelo dado su clave primaria

@@ -92,7 +92,7 @@ public class AuthService implements AuthInterface{
         long win = player.getWin();
         long lost = player.getLost();
         Statement statement = this.conn.createStatement();
-        String sql = String.format("UPDATE player SET name= '%s',surname= '%s', nametag= '%s', password= '%s', wingames=%d, lostgames=%d WHERE id=%d", name, surname, nametag, password,win,lost,id);
+        String sql = String.format("UPDATE player SET name= '%s',surname= '%s', nametag= '%s', password= '%s', wingames=%d, lostgames=%d WHERE id=%d", name, surname, nametag, password ,win,lost, id);
         int affectedRow = statement.executeUpdate(sql);
         statement.close();
         if(affectedRow==0){
