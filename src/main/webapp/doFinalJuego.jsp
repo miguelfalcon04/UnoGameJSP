@@ -8,6 +8,8 @@
 <%@page import="player.LoggedPlayer"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="player.PlayerService"%>
+<%@page import="views.finJuegoView"%>
+
 
 <%
     request.setCharacterEncoding("UTF-8");
@@ -59,7 +61,7 @@
     LoggedPlayer newPlayerData = new LoggedPlayer(player.getId(),name, surname, nametag, player.getPassword(), win, lost);
     if(auth.updateEnd(newPlayerData)==1){
         session.setAttribute("player",newPlayerData);
-        response.sendRedirect("home.jsp");
+        out.print(new finJuegoView(player, ganador));
     }else{
         response.sendRedirect("login.jsp?error=No ha sido posible cambiar la inforamción");
     }
