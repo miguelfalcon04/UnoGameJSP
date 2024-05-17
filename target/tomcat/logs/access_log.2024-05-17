@@ -237,3 +237,4 @@
 0:0:0:0:0:0:0:1 - - [17/May/2024:18:22:03 +0200] "POST /login/juego.jsp HTTP/1.1" 302 - http-bio-8080-exec-8 7
 0:0:0:0:0:0:0:1 - - [17/May/2024:18:22:03 +0200] "GET /login/doFinalJuego.jsp?ganador=2 HTTP/1.1" 200 1179 http-bio-8080-exec-2 36
 0:0:0:0:0:0:0:1 - - [17/May/2024:18:22:52 +0200] "GET /login/home.jsp? HTTP/1.1" 200 3274 http-bio-8080-exec-5 16
+0:0:0:0:0:0:0:1 - - [17/May/2024:18:23:03 +0200] "GET /login/home.jsp? HTTP/1.1" 200 3274 http-bio-8080-exec-5 6
