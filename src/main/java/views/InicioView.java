@@ -20,7 +20,7 @@ public class InicioView {
         "               <div class=\"col-12\">"+
         "                   <ul class=\"list-group\">"+
         "                   <li class=\"list-group-item list-group-item-danger\">1. Se baraja el mazo y se reparten 3 cartas a cada jugador</li>"+
-        "                   <li class=\"list-group-item list-group-item-danger\">2. Las cartas sobravantes se colocan boca abajo como mazo de robar</li>"+
+        "                   <li class=\"list-group-item list-group-item-danger\">2. Las cartas sobrantes se colocan boca abajo como mazo de robar</li>"+
         "                   <li class=\"list-group-item list-group-item-danger\">3. Para lanzar carta debe ser del mismo color o número</li>"+
         "                   <li class=\"list-group-item list-group-item-danger\">4. Si no puedes lanzar carta robas una (Máximo 7 cartas en mano)</li>"+
         "                   <li class=\"list-group-item list-group-item-danger\">5. Quien se quede sin cartas gana</li>"+
